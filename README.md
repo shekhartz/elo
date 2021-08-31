@@ -36,5 +36,4 @@ This project aims to build a machine learning model to identify and serve the mo
         - 8.3.1. Hyperparameter Tuning
         - 8.3.2. Model Building
     - 8.4. Summary
-    - 8.5. Final Submission
 
