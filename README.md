@@ -25,7 +25,6 @@ This project aims to build a machine learning model to identify and serve the mo
         - 6.4.4. LGBM Regressor
         - 6.4.5. AutoEncoder Model
     - 6.5. Summary
-    - 6.6. Final Submission
 7. Advance Feature Engineering
 8. Improved Solution
     - 8.1. Splitting Features and Labels
