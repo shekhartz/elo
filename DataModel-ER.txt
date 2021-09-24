@@ -1,0 +1,87 @@
+// ELO Merchant Category Recomendation - Data Model : ER Diagram
+
+//// -- Tables and References
+
+// Creating card_details table
+Table card_details as c {
+  card_id varchar [pk, increment] // auto-increment
+  first_active_month datetime
+  feature_1 varchar
+  feature_2 varchar
+  feature_3 varchar
+  target float
+}
+
+// Creating merchant_details table
+Table merchant_details as m {
+  merchant_id int [pk]
+  merchant_group_id varchar
+  merchant_catg_id varchar
+  subsector_id varchar
+  numerical_1 varchar
+  numerical_2 varchar
+  catg_1 char
+  catg_2 char
+  catg_4 char
+  city_id varchar
+  state_id varchar
+  most_recent_sales_range float
+  most_recent_purchase_range float
+  avg_sales_lag3 float
+  avg_purchase_lag3 float
+  active_month_lag3 float
+  avg_sales_lag6 float
+  avg_purchase_lag6 float
+  active_month_lag6 float
+  avg_sales_lag12 float
+  avg_purchase_lag12 float
+  active_month_lag12 float
+ }
+
+// Creating old_transaction table
+Table old_transaction_details as o{
+  card_id varchar
+  merchant_id varchar
+  merchant_catg_id varchar
+  subsector_id varchar
+  catg_1 char
+  catg_2 char
+  catg_3 char
+  city_id varchar
+  state_id varchar
+  month_lag int
+  auth_flag boolean
+  installments int
+  purchase_amt float
+  purchase_date datetime
+}
+
+// Creating new_transaction table
+Table new_transaction_details as n{
+  card_id varchar
+  merchant_id varchar
+  merchant_catg_id varchar
+  subsector_id varchar
+  catg_1 char
+  catg_2 char
+  catg_3 char
+  city_id varchar
+  state_id varchar
+  month_lag int
+  auth_flag boolean
+  installments int
+  purchase_amt float
+  purchase_date datetime
+}
+
+// Creating references
+
+Ref: c.card_id < o.card_id
+Ref: c.card_id < n.card_id
+Ref: o.card_id > m.merchant_id
+Ref: n.card_id > m.merchant_id
+
+
+
+
+

@@ -1,0 +1,14 @@
+title ELO Merchant Category Recommendation (Training Time)
+
+DataSource->Preprocessing: Data Loading
+DataSource->Preprocessing: Memory Reduction
+Preprocessing->Feature_Engineering:Data Preprocessed
+Feature_Engineering->Data_Splitting: Feature Engg 1
+Feature_Engineering->Data_Splitting: Feature Engg 2
+Feature_Engineering->Data_Splitting: Feature Engg 3
+Feature_Engineering->Data_Splitting: Feature Engg 4
+Data_Splitting->Model_Building: Train set, Test set
+Model_Building->Model_Building: Hyperparameter Tuning
+Model_Building->Model_Building: Model Training
+Model_Building->Model_Building: Model Validation
+Model_Building->DataSource: Model Dumped

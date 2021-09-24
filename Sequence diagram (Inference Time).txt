@@ -1,0 +1,20 @@
+title ELO Merchant Category Recommendation (Inference Time)
+
+User->ELO Interface: Enter Card ID
+ELO Interface->ELO Controller: validate(Card ID)
+ELO Controller->ELO Controller: Validate
+ELO Controller->ELO Interface: invalid(Card ID)
+ELO Controller->ELO: Load Model
+ELO->DataSource: Load Model
+DataSource->ELO: Model Loaded
+ELO->ELO Controller: Model Loaded
+ELO Controller->ELO: Get Card details corresponding to Card ID
+ELO->AWS: Access AWS S3 Bucket
+AWS->AWS: Validate & Access AWS
+AWS->ELO: Load Card details
+ELO->ELO Controller: Filter Card details
+ELO->ELO Controller: Call 'Predict' function from loaded Model
+ELO->ELO Controller: Pass Card details in 'Predict' function
+ELO->ELO Controller: Call RMSE function and pass the predicted result
+ELO->ELO Controller: Get RMSE
+ELO Controller->ELO Interface: return RMSE
