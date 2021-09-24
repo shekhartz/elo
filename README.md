@@ -43,3 +43,6 @@ This project aims to build a machine learning model to identify and serve the mo
 
 ### Inference Time Flow
 ![alt text](https://github.com/shekhartz/elo/blob/master/Seq_diagram_Inference_Time.png "Sequence diagram Inference Time")
+
+### Data Model: ER Diagram
+![alt text](https://github.com/shekhartz/elo/blob/master/DataModel_ER.png "ER diagram")
