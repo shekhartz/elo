@@ -37,3 +37,9 @@ This project aims to build a machine learning model to identify and serve the mo
         - 8.3.1. Hyperparameter Tuning
         - 8.3.2. Model Building
     - 8.4. Summary
+
+### Training Time Flow
+![alt text](https://github.com/shekhartz/elo/blob/master/Seq_diagram_Training_Time.png "Sequence diagram Training Time")
+
+### Inference Time Flow
+![alt text](https://github.com/shekhartz/elo/blob/master/Seq_diagram_Inference_Time.png "Sequence diagram Inference Time")
