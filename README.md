@@ -2,6 +2,8 @@
 
 #### LIVE DEMO: [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/shekhartz/elo-app)
 
+#### BLOG: [ELO Merchant Category Recommendation](https://pub.towardsai.net/elo-merchant-category-recommendation-6c15049f76d5)
+
 Elo, one of the largest payment brands in Brazil, has built partnerships with merchants to offer promotions or discounts to cardholders. Elo has built machine learning models to understand the most important aspects and preferences in their customers' lifecycle, from food to shopping. But so far none of them is specifically tailored for an individual or profile. Elo thus has a new objective to build a model to provide personalized recommendations. The model aims to improve customers' lives and help Elo reduce unwanted campaigns, to create the right experience for customers.
 
 This project aims to build a machine learning model to identify and serve the most relevant opportunities to individuals, by exposing indicators in customer loyalty by predicting a loyalty score for each payment card id.
@@ -35,4 +37,3 @@ This project aims to build a machine learning model to identify and serve the mo
         - 8.3.1. Hyperparameter Tuning
         - 8.3.2. Model Building
     - 8.4. Summary
-
